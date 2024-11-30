@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Order</title>
+    <link rel="stylesheet" href="order.css">
+    <script src="jquery.min.js" defer></script>
+    <script src="order.js" defer></script>
+</head>
+<body>
+
+    
+    <header>
+        <div class="logo">Pedia Kanak</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="order.html">Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="container">
+        
+        
+        <div class="order-form">
+            <h2>Create New Order</h2>
+            
+            <form id="orderForm">
+                
+                <div class="form-group">
+                    <label for="customerName">Customer Name</label>
+                    <input type="text" id="customerName" name="customerName" class="form-control" placeholder="Enter customer name" required>
+                </div> 
+                <div id="itemsInOrder">
+                    <table id="billTable" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <div class="product-box">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-3">
+                                        <label for="product">Product</label>
+                                        <select name="product" class="form-control product-select"></select>
+                                <td><input type="number" class="form-control product-price" value="0.0" required></td>
+                                <td><input type="number" class="form-control product-qty" value="1" min="1"></td>
+                                <td><input type="text" class="form-control product-total" value="0.0" required></td>
+                                <td><button type="button" class="remove-row btn btn-danger">Remove</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+        <div id="itemsInOrder">
+                    <div class="product-box">
+                        <div class="row align-items-center">
+                    <div class="col-sm-3">
+                        <div class="row">
+                            <div class="col-sm-9 text-right">
+                                <h4><b>Grand Total</b></h4>
+                        <h4><b><span id="total">0.0</span> Rs</b></h4>
+                        <button type="button" id="addMoreButton" class="btn btn-primary">Add More</button>
+                        <button type="button" id="saveOrder" class="btn btn-success">Save Order</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="jquery.min.js"></script>
+    
+</body>
+</html>

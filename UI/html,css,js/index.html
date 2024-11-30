@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="csrf-token" content="kmapods5wQ5L1hn7rcR9OPst7EsN0gC7SrHh3m9K"/>
+    <title>Pedia Kanak Store Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Pedia Kanak</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inventory.html" id="inventory-link">Inventory</a></li>
+                <li><a href="order.html" id="order-link">Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+            </tbody>
+        </table>
+    </section>
+    <section id="add-product" class="add-product-section">
+        <h2>Add New Product</h2>
+        <form id="add-product-form">
+            <input type="text" id="product-name" placeholder="Product Name" required>
+            <input type="number" id="product-price" placeholder="Price" required>
+            <input type="number" id="product-quantity" placeholder="Quantity" required>
+            <input type="number" id="product-uom-id" placeholder="Unit of Measure ID" required>
+            <button type="submit" class="cta-btn">Add Product</button>
+        </form>
+    </section>
+</body>
+</html>
+

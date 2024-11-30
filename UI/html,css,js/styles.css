@@ -1,0 +1,264 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F56C0E; 
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+.product-item {
+    display: flex;
+    flex-wrap: wrap;          
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;      
+}
+
+.product-item > .col-sm-3, 
+.product-item > .col-sm-2 {
+    margin-bottom: 10px;      
+    width: auto;              
+}
+
+.product-item select, 
+.product-item input {
+    width: 100%;              
+    padding: 10px;            
+    border-radius: 5px;
+    border: 1px solid #ccc;  
+    font-size: 1rem;
+}
+
+
+#inventory table, #manage-products table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#inventory table th, #manage-products table th, 
+#inventory table td, #manage-products table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#inventory table th, #manage-products table th {
+    background-color: #76B041; 
+    color: white;
+}
+
+
+#add-product input, #productModal input {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#productModal select {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.sales-section, .profit-section {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.sales-section span, .profit-section span {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+.modal-content {
+    padding: 20px;
+}
+
+.modal-header {
+    background-color: #F56C0E; 
+    color: white;
+}
+
+.modal-footer button {
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+}
+
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: 1px solid #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    border: 1px solid #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+
+.row {
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+#totalAmount {
+    font-size: 22px;
+    font-weight: bold;
+    color: #F56C0E; 
+}
+
+#order-dashboard {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tfoot {
+    background-color: #f2f2f2;
+}
+
+#total-cost {
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    
+    #inventory table, #add-product input, #productModal input, #manage-products table {
+        width: 100%;
+    }
+
+    .cta-btn {
+        width: 100%;
+    }
+
+    
+    .product-item {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .product-item > .col-sm-3, 
+    .product-item > .col-sm-2 {
+        width: 100%; 
+    }
+}

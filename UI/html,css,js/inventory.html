@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="manager.js" defer></script>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Pedia Kanak</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="order.html">Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inventory" class="inventory-section">
+        <h2>Inventory Management</h2>
+        <table id="inventory-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Unit</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+     <section id="add-product" class="add-product-section">
+        <h2>Add New Product</h2>
+        <form id="add-product-form">
+            <input type="text" id="product-name" placeholder="Product Name" required>
+            <input type="number" id="product-price" placeholder="Price" required>
+            <input type="number" id="product-quantity" placeholder="Quantity" required>
+            <input type="number" id="product-uom-id" placeholder="Unit of Measure ID" required>
+            <button type="submit" class="cta-btn">Add Product</button>
+        </form>
+    </section>
+</body>
+</html>
+<section id="orderTable" class="dailyOrdersTable">
+    <h2>Order Dashboard</h2>
+    <table id="orderTable" class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Order ID</th>
+                <th>Customer Name</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" style="text-align: end; font-weight: bold;">Total</td>
+                <td id="total-cost" style="font-weight: bold;"></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+    <section id="sales" class="sales-section">
+        <h2>Sales Overview</h2>
+        <p>Daily Sales: <span id="daily-sales">0.00 rs</span></p>
+    </section>
+     <section id="profit" class="profit-section">
+        <h2>Profit Overview</h2>
+        <p>Daily Profit: <span id="total-profit">0.00 rs</span></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Pedia Kanak Admin Dashboard</p>
+    </footer>
+</body>
+</html>

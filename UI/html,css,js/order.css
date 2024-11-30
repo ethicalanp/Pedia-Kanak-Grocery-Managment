@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #f86205;
+    color: white;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.order-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group select,
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.text-right {
+    text-align: right;
+}
+
+#itemsInOrder {
+    margin-bottom: 20px;
+}
+
+.product-box-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.product-box-row .form-control {
+    width: 100%;
+}
+
+#totalAmount {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #28a745;
+}
+
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#billTable {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+#billTable thead {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+#billTable th {
+    padding: 10px;
+    font-weight: bold;
+}
+
+#billTable tbody tr td {
+    padding: 10px;
+    text-align: left;
+}
+
+#billTable select,
+#billTable input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#billTable .remove-row {
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+#billTable .remove-row:hover {
+    color: #c82333;
+}
+
+#billTable .product-select,
+#billTable .product-price,
+#billTable .product-qty,
+#billTable .product-total {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+#billTable .product-price,
+#billTable .product-total {
+    background-color: #f9f9f9;
+}
+
+#addMoreButton {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addMoreButton:hover {
+    background-color: #0056b3;
+}
+
+#saveOrder {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#saveOrder:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header .logo {
+        font-size: 1.2em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #itemsInOrder {
+        margin-bottom: 10px;
+    }
+
+    #totalAmount {
+        font-size: 1.2em;
+    }
+
+    .product-box-row {
+        flex-direction: column;
+    }
+}
