@@ -3,6 +3,7 @@ A simple inventory and order management system built with python Flask for api a
 
 
 **Technology Used**
+
 Pyhton
 
 Flask
